@@ -1,7 +1,7 @@
 {
 	"id": "obsidian-new-template-button",
 	"name": "New Template Button",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "Add a button that create new files based on templates in a way that you can replace strings.",
 	"author": "jptannus",
