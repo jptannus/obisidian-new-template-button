@@ -8,7 +8,6 @@ import {markdownPostProcessor} from './src/markdownProcessor';
 export default class NewTemplateButtonPlugin extends Plugin {
 
 	async onload() {
-		console.log("onload");
 		this.addCommand(editorCommand);
 		this.registerMarkdownPostProcessor((el, context) => {
 			markdownPostProcessor(this.app, el, context);

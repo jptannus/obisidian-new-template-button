@@ -7,7 +7,7 @@ import {
 export interface ParamMap {
   title?: string,
   templatePath?: string,
-  openFile?: string,
+  openNote?: string,
   openSplit?: string,
   targetFolder?: string
 }
@@ -19,7 +19,7 @@ export async function buttonClicked(
 	params: ParamMap,
   replaces: ReplaceMap
 ) {
-  const {templatePath, title, targetFolder, openFile, openSplit} = params;
+  const {templatePath, title, targetFolder, openNote, openSplit} = params;
   const templateFile = findSpecificFile(app, templatePath);
 
 	if (templateFile) {
@@ -27,7 +27,7 @@ export async function buttonClicked(
     const newContent = replaceContent(content, replaces);
 		const newFilePath = targetFolder? `${targetFolder}/${title}` : title
 		const newFile = await createNote(app, newContent, newFilePath);
-    openFileIfDesired(newFile, openFile, openSplit);
+    openFileIfDesired(newFile, openNote, openSplit);
 	}
 }
 
@@ -49,7 +49,7 @@ function openFileIfDesired(
 ) {
   if (file) {
     if (open == undefined || open == 'true') {
-      if (split == undefined || split == 'true') {
+      if (split == 'true') {
         app.workspace.getLeaf('split', 'vertical').openFile(file);
       } else {
         app.workspace.getLeaf().openFile(file);

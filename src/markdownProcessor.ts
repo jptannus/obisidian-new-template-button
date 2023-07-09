@@ -55,8 +55,8 @@ function extractParameters(
     params.title = extractParameterValue(line, 'title');
   } else if (line.startsWith('templatePath')) {
     params.templatePath = extractParameterValue(line, 'templatePath');
-  } else if (line.startsWith('openFile')) {
-    params.openFile = extractParameterValue(line, 'openFile');
+  } else if (line.startsWith('openNote')) {
+    params.openNote = extractParameterValue(line, 'openNote');
   } else if (line.startsWith('openSplit')) {
     params.openSplit = extractParameterValue(line, 'openSplit');
   } else if (line.startsWith('targetFolder')) {
