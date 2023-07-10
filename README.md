@@ -49,3 +49,7 @@ replace-date: 2023-10-10
 All occurances of the string `{{date}}` in the template will be replaced by `2023-10-10`.
 
 You can add as many replace lines as you like.
+
+# TODO
+[ ] - Create a new property for the button label to be different from the title.
+[ ] - Create an option to use a modal to create new notes (more specific usage)
