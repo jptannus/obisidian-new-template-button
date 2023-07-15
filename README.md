@@ -54,7 +54,7 @@ You can add as many replace lines as you like.
 
 ### v1.1.0
 - Added button label property.
-- Fixed issue where not all occurences of the text to be replaced would be replaced.
+- Fixed issue where not all occurrences of the text to be replaced would be replaced.
 
 # TODO
 [ ] - Create an option to use a modal to create new notes (adding title and tags)

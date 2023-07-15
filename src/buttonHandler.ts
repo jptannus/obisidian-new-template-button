@@ -38,7 +38,7 @@ function replaceContent(
 ): string {
   let newContent = content;
   for (let [key, value] of replaces) {
-    newContent = newContent.replaceAll(`{{${key}}}`, value);
+    newContent = newContent.split(`{{${key}}}`).join(value);
   }
   return newContent;
 }
