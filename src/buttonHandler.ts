@@ -5,6 +5,7 @@ import {
 } from 'obsidian';
 
 export interface ParamMap {
+  buttonLabel?: string,
   title?: string,
   templatePath?: string,
   openNote?: string,

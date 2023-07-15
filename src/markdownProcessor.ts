@@ -53,6 +53,8 @@ function extractParameters(
 ): ParamMap {
   if (line.startsWith('title')) {
     params.title = extractParameterValue(line, 'title');
+  } else if (line.startsWith('buttonLabel')) {
+    params.buttonLabel = extractParameterValue(line, 'buttonLabel');
   } else if (line.startsWith('templatePath')) {
     params.templatePath = extractParameterValue(line, 'templatePath');
   } else if (line.startsWith('openNote')) {
@@ -96,7 +98,7 @@ class InlineButton extends MarkdownRenderChild {
   }
   async onload() {
     const button = this.el.createEl('button');
-		button.innerHTML = this.params.title || 'No title';
+		button.innerHTML = this.params.buttonLabel || this.params.title || 'No title';
 		button.on('click', 'button', () => buttonClicked(this.app, this.params, this.replaces))
     this.el.replaceWith(button);
   }
