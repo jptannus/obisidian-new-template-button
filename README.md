@@ -50,6 +50,11 @@ All occurances of the string `{{date}}` in the template will be replaced by `202
 
 You can add as many replace lines as you like.
 
+# Change log
+
+### v1.1.0
+- Added button label property.
+- Fixed issue where not all occurences of the text to be replaced would be replaced.
+
 # TODO
-[ ] - Create a new property for the button label to be different from the title.
-[ ] - Create an option to use a modal to create new notes (more specific usage)
+[ ] - Create an option to use a modal to create new notes (adding title and tags)
