@@ -57,4 +57,7 @@ You can add as many replace lines as you like.
 - Fixed issue where not all occurrences of the text to be replaced would be replaced.
 
 # TODO
+[ ] - Use normalize path (https://marcus.se.net/obsidian-plugin-docs/publishing/submission-guidelines)
+[ ] - Publish it to the official repo (https://marcus.se.net/obsidian-plugin-docs/publishing/submit-your-plugin)
 [ ] - Create an option to use a modal to create new notes (adding title and tags)
+[ ] - Create GitHub actions to create new releases (https://marcus.se.net/obsidian-plugin-docs/publishing/release-your-plugin-with-github-actions)
